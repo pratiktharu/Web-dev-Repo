@@ -1,0 +1,32 @@
+<!--Attribute Selectors-->
+<!--This is used to apply styles to HTML elements with particular attributes.-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> CSS Attribute selector </title>
+
+  <style>
+    /*This code will change background color to yellow of 'label' tag having 'for' attribute. */
+        label[for]
+        {
+            background:yellow;
+        }
+  </style>
+</head>
+
+<body>
+  <form>
+    <fieldset>
+      <legend> Login Form </legend>
+
+      <label for="user">  Username *:  </label> <input type="text" id="user" /> <br><br>
+      <label for="pass">  Password *:  </label> <input type="password" id="pass" /> <br><br>
+
+      <input type="submit" value="Submit" />
+    </fieldset>
+  </form>
+</body>
+
+</html>

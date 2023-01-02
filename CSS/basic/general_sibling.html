@@ -1,0 +1,26 @@
+<!-- General Sibling Selector
+The CSS general sibling selector is used to select HTML elements which have the same parent.
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS general child selector</title>
+  <style type="text/css">
+    /* This code will select all p elements which are preceded by div element somewhere (inside the same parent). */ 
+    	div ~ p
+    	{
+    	  background : lightgray;
+    	}
+  </style>
+</head>
+
+<body>
+  <div>
+    <p> Paragraph 1 : in the div </p>
+  </div>
+  <p> Paragraph 2 : not in the div </p>
+</body>
+
+</html>

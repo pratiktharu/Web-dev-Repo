@@ -1,0 +1,54 @@
+<!--transform property
+
+CSS3 transforms allow you to translate, rotate, scale, and skew elements.
+
+A transformation is an effect that lets an element change shape, size and position.
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <style type="text/css">
+    #outer
+    {
+      width:300px;
+      height:300px;
+      background:skyblue;
+    }
+
+    #cube
+    {
+      width:100px;
+      height:100px;
+      line-height:100px;
+      background:blue;
+      transition: all 3s ease-in-out;
+    }
+
+    #cube p
+    {
+      color:white;
+      text-align:center;
+    }
+
+    #cube:hover
+    {
+      width:200px;
+      border-radius:10px;
+      background:red;
+      transform:scale(0.5);
+    }
+  </style>
+
+  <body>
+
+    <div id="outer">
+
+      <div id="cube">
+        <p> Hello!</p>
+      </div>
+    </div>
+  </body>
+  </html>

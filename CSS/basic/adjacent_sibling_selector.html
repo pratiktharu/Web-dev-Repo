@@ -1,0 +1,34 @@
+<!-- Adjacent Sibling Selector
+
+The adjacent sibling CSS selector is used to select HTML elements that are adjacent siblings of some other HTML element.
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>CSS adjacent child selector</title>
+
+
+  <style type="text/css">
+    /* This code will select all 'div' elements which are having a 'p' element preceding it as sibling. */
+    	 
+    	p + div 
+    	{
+    		font-size:20px;
+    		color:red;
+    	}
+  </style>
+</head>
+
+<body>
+  <p>This is a First paragraph</p>
+  <div>
+    <p> This is a adjacent sibling. </p>
+  </div>
+  <p>This is a third paragraph</p>
+
+</body>
+
+</html>
